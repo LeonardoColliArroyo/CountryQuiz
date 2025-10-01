@@ -1,0 +1,124 @@
+.wrong-answer-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: left; /* centra todo horizontalmente */
+  margin-top: 20px;    /* opcional, para separar del borde superior */
+}
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  width: 90%; /* Ajustamos el ancho para que sea responsivo */
+  max-width: 780px; /* Agregamos un ancho máximo para que coincida con la tarjeta */
+  
+  padding: 20px;
+  position: fixed;
+  top: 50px;
+  
+  left: 50%; /* Lo movemos al 50% de la pantalla */
+  transform: translateX(-47%); /* Lo centramos en su propio eje horizontal */
+  box-sizing: border-box; /* Incluimos el padding en el ancho */
+}
+.top-text {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  color: #E2E4F3;
+  text-align: center;   /* centra horizontalmente */
+  position: fixed;
+  /*top: 30px;*/
+  /*left: 30px;*/
+}
+.points-container{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    background: linear-gradient(#E65895, #BC6BE8);
+    color: #fff;
+    margin-left: 70%;
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-size: 12px; 
+    border-radius: 50px;
+    position: fixed;
+    width: 150px;
+    height: 40px;
+    /*top: 60px;*/
+    /*right: 30px;*/
+}
+.points-text{
+    margin-left: 8px;
+}
+.question-card {
+  background: #343964;
+  color: #ffffff;
+  padding: 100px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 500px;
+  width: 600px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+.question-indicators-container {
+  display: flex;         /* organiza los elementos en una línea */
+  justify-content: center; /* alineación dentro del contenedor */
+  flex-wrap: wrap;
+  margin-bottom: 18px;
+}
+.question-indicator {
+    display: inline-flex;
+    background: #4B5281; /* Un color oscuro para los indicadores inactivos */
+    color: #E2E4F3;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-weight: 500;
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.question-indicator:hover {
+  background: linear-gradient(#E65895, #BC6BE8);
+}
+
+.question-indicator.active {
+    background: linear-gradient(#E65895, #BC6BE8); /* El color de hover */
+    color: #fff; /* Asegura que el número se vea bien */
+}
+.question-country {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 450;
+  font-size: 20px;
+  margin-bottom: 18px;
+  color: #E2E4F3;
+}
+
+.answer-btn {
+  background-color: #393F6E;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 450;
+  color: #E2E4F3;
+  border-radius: 12px;
+  width: 240px;
+  height: 60px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+
+button:hover {
+    background:linear-gradient(#E65895, #BC6BE8); 
+}
+.wrong-answer-container{
+    font-size: 16px;
+  margin-bottom: 16px;
+  color: #E2E4F3;
+}
+.flag-image {
+  width: 50px; /* Tamaño que tu quieras */
+  height: auto; /* Mantiene la proporción original */
+  margin-bottom: -20px;
+}

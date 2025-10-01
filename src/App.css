@@ -1,0 +1,16 @@
+/* Estilos globales y de fondo */
+body {
+  margin: 0;
+  padding: 0;
+  background: url('../resources/bg.jpg') no-repeat center center fixed; /* Ajusta la ruta si es necesario */
+  background-size: cover;
+  font-family: 'Poppins', sans-serif;
+  flex-direction: column;
+  display: flex;
+  
+  /* Esto es CLAVE para centrar el contenido */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
